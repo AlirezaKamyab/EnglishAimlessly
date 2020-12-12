@@ -1,0 +1,78 @@
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe.config
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Properties.Resources.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.GenerateResource.cache
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.CoreCompileInputs.cache
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.exe
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\DictionaryDatabase.mdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csprojAssemblyReference.cache
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlesslyLibrary.dll
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlesslyLibrary.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.CopyComplete
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Demo.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.AddForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DictionaryManger.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DeleteForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Main.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.UpdateForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Menu.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Settings.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Activator.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe.manifest
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.application
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.TrustInfo.xml
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.exe.manifest
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.application
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\bin\Debug\UserDatabase.mdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.HistoryForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.InspectForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.LoadingForm.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ExampleInspection.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ReadExample.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.AddGroup.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DeleteGroup.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.UpdateGroup.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.MasterChallenge.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.MasterResults.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ResultItem.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\DictionaryDatabase.mdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\UserDatabase.mdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe.config
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe.manifest
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.application
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.exe
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlessly.pdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlesslyLibrary.dll
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\bin\Debug\EnglishAimlesslyLibrary.pdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csprojAssemblyReference.cache
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Activator.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.AddForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.AddGroup.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DeleteForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DeleteGroup.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Demo.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.DictionaryManger.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ExampleInspection.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.HistoryForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.InspectForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.LoadingForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Main.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.MasterChallenge.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.MasterResults.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Menu.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Properties.Resources.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ReadExample.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.ResultItem.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Settings.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.UpdateForm.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.UpdateGroup.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.GenerateResource.cache
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.CoreCompileInputs.cache
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.TrustInfo.xml
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.exe.manifest
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.application
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.csproj.CopyComplete
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.exe
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.pdb

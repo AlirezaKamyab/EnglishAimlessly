@@ -1,0 +1,49 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EnglishAimlessly.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DictionaryDatabaseConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DictionaryDatabase.mdb;Jet OLEDB:Database Password=AimLessly2021&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DictionaryDatabase.mdb;Jet OLEDB:Database Password=AimLessly2021</Value>
+    </Setting>
+    <Setting Name="LastPractice" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2020-09-29</Value>
+    </Setting>
+    <Setting Name="ActivitionCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AimLessly2021</Value>
+    </Setting>
+    <Setting Name="Code" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Nothing</Value>
+    </Setting>
+    <Setting Name="PracticeCycle" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="IsOneStartUp" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.7.1</Value>
+    </Setting>
+    <Setting Name="DatabaseVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.2.1</Value>
+    </Setting>
+    <Setting Name="UserDatabaseConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\UserDatabase.mdb;Persist Security Info=True;Jet OLEDB:Database Password=AimLessly2021&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\UserDatabase.mdb;Persist Security Info=True;Jet OLEDB:Database Password=AimLessly2021</Value>
+    </Setting>
+    <Setting Name="MaximumWords" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SelectedGroupPractice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*All*</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

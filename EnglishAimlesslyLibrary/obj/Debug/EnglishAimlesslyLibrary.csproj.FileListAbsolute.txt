@@ -1,0 +1,14 @@
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\bin\Debug\EnglishAimlesslyLibrary.dll
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\bin\Debug\EnglishAimlesslyLibrary.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.Properties.Resources.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csproj.GenerateResource.cache
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.dll
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.pdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\bin\Debug\EnglishAimlesslyLibrary.dll
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\bin\Debug\EnglishAimlesslyLibrary.pdb
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.Properties.Resources.resources
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csproj.GenerateResource.cache
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csproj.CoreCompileInputs.cache
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.dll
+G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.pdb
