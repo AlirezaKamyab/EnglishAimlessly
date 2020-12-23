@@ -164,11 +164,8 @@ namespace EnglishAimlessly
             userDictionary.ReloadList();
         }
 
-        Main main = new Main();
         private void practiceTimer_Tick(object sender, EventArgs e)
         {
-            //--Practice time
-            main.FormClosing += Main_FormClosing;
             lastPracticeToolStripMenuItem.Text = lblNextPractice.Text;
             switch (Properties.Settings.Default.PracticeCycle)
             {
@@ -176,6 +173,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Next practice in " + ConvertTime(30*60*1000);
                     if (atime.TotalMinutes >= 30)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -183,6 +182,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Next practice in " + ConvertTime(45 * 60 * 1000);
                     if (atime.TotalMinutes >= 45)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -191,6 +192,8 @@ namespace EnglishAimlessly
 
                     if (atime.TotalHours >= 1)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -199,6 +202,8 @@ namespace EnglishAimlessly
 
                     if (atime.TotalHours >= 2)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -207,6 +212,8 @@ namespace EnglishAimlessly
 
                     if (atime.TotalHours >= 5)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -215,6 +222,8 @@ namespace EnglishAimlessly
 
                     if (atime.TotalHours >= 12)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -223,6 +232,8 @@ namespace EnglishAimlessly
 
                     if (atime.Days >= 1)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -231,6 +242,8 @@ namespace EnglishAimlessly
 
                     if (atime.Days >= 2)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -238,6 +251,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Next practice in " + ConvertTime(7 * 24 * 60 * 60 * 1000);
                     if (atime.Days >= 7)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -245,6 +260,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Next practice in " + ConvertTime(14 * 24 * 60 * 60 * 1000); ;
                     if (atime.Days >= 14)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -252,6 +269,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Last practice was in " + atime.Days + "d " + atime.Hours + "h " + atime.Minutes + "m ago";
                     if (atime.Months >= 1)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -259,6 +278,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Last practice was in " + atime.Days + "d " + atime.Hours + "h " + atime.Minutes + "m ago";
                     if (atime.Months >= 2)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -266,6 +287,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Last practice was in " + atime.Days + "d " + atime.Hours + "h " + atime.Minutes + "m ago";
                     if (atime.Years >= 1)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;
@@ -273,6 +296,8 @@ namespace EnglishAimlessly
                     lblNextPractice.Text = "Last practice was in " + atime.Days + "d " + atime.Hours + "h " + atime.Minutes + "m ago";
                     if (atime.Minutes >= 30)
                     {
+                        Main main = new Main();
+                        main.FormClosing += Main_FormClosing;
                         ReadyForLearning(main);
                     }
                     break;

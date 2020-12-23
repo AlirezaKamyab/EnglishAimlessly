@@ -134,29 +134,36 @@ namespace EnglishAimlessly
 
         private void LoadTheWord()
         {
-            string htmlData = "";
-            userDictionary.ReloadList();
-            wordsDictionary.ReloadList();
-            word = ChooseAWord();
+            try
+            {
+                string htmlData = "";
+                userDictionary.ReloadList();
+                wordsDictionary.ReloadList();
+                word = ChooseAWord();
 
-            lblWord.Text = word.Name + " (" + word.Type.ToString() + ")";
-            //lblEquivalent.Text = word.Equivalent;
-            if (word.Equivalent.Trim() != "")
-            {
-                htmlData += "<p><b><i>" + word.Equivalent + "</i></b></p><br><hr><br>\n";
+                lblWord.Text = word.Name + " (" + word.Type.ToString() + ")";
+                //lblEquivalent.Text = word.Equivalent;
+                if (word.Equivalent != null && word.Equivalent.Trim() != "")
+                {
+                    htmlData += "<p><b><i>" + word.Equivalent + "</i></b></p><br><hr><br>\n";
+                }
+                htmlData += word.Description;
+                DisplayHtml(htmlData);
+                lblPracticed.Text = "Practiced: " + word.Practiced.ToString();
+                lblGroup.Text = string.Format("Group: {0}", word.Group);
+                if (word.Important)
+                {
+                    lblWord.Text = word.Name + "* (" + word.Type.ToString() + ")";
+                    lblWord.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblWord.ForeColor = Color.Black;
+                }
             }
-            htmlData += word.Description;
-            DisplayHtml(htmlData);
-            lblPracticed.Text = "Practiced: " + word.Practiced.ToString();
-            lblGroup.Text = string.Format("Group: {0}", word.Group);
-            if (word.Important)
+            catch
             {
-                lblWord.Text = word.Name + "* (" + word.Type.ToString() + ")";
-                lblWord.ForeColor = Color.Red;
-            }
-            else
-            {
-                lblWord.ForeColor = Color.Black;
+
             }
         }
         private void DisplayHtml(string html)
