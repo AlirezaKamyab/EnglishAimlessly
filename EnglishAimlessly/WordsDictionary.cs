@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Net;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace EnglishAimlessly
 {
@@ -309,7 +310,7 @@ namespace EnglishAimlessly
             }
         }
 
-        public List<Word> FilterByPracticedNumber(int number, int max)
+        public List<Word> FilterByPracticedNumber(int number, int max, bool random = false)
         {
             List<Word> temp = new List<Word>();
             int counter = 0;
@@ -326,7 +327,7 @@ namespace EnglishAimlessly
                     break;
                 }
             }
-
+            Shuffle<Word>(temp);
             return temp;
         }
 
@@ -336,6 +337,23 @@ namespace EnglishAimlessly
             OleDbCommand command = new OleDbCommand(strCommand, _connection);
             command.ExecuteNonQuery();
             Close();
+        }
+
+        private void Shuffle<T>(IList<T> list)
+        {
+            RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider();
+            int n = list.Count;
+            while (n > 1)
+            {
+                byte[] box = new byte[1];
+                do provider.GetBytes(box);
+                while (!(box[0] < n * (Byte.MaxValue / n)));
+                int k = (box[0] % n);
+                n--;
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
         }
 
         public event AddHandler Added;

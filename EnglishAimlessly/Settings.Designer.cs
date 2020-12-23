@@ -36,6 +36,10 @@
             this.CheckStartup = new System.Windows.Forms.CheckBox();
             this.lblVersion = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.lblMasterValue = new System.Windows.Forms.Label();
+            this.TrackQuestionsValue = new System.Windows.Forms.TrackBar();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnApply = new System.Windows.Forms.Button();
             this.comboGroup = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,14 +51,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnFIX = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackQuestionsValue)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnFIX);
             this.panel1.Controls.Add(this.lblActivitionStatues);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
@@ -76,13 +83,14 @@
             this.lblActivitionStatues.Text = "*Application is activated";
             this.lblActivitionStatues.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblActivitionStatues.Visible = false;
+            this.lblActivitionStatues.Click += new System.EventHandler(this.lblActivitionStatues_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblDatabaseVersion);
             this.groupBox2.Controls.Add(this.CheckStartup);
             this.groupBox2.Controls.Add(this.lblVersion);
-            this.groupBox2.Location = new System.Drawing.Point(17, 277);
+            this.groupBox2.Location = new System.Drawing.Point(16, 323);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(970, 194);
             this.groupBox2.TabIndex = 9;
@@ -120,6 +128,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnReset);
+            this.groupBox1.Controls.Add(this.lblMasterValue);
+            this.groupBox1.Controls.Add(this.TrackQuestionsValue);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnApply);
             this.groupBox1.Controls.Add(this.comboGroup);
             this.groupBox1.Controls.Add(this.label2);
@@ -131,15 +143,61 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(17, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(970, 194);
+            this.groupBox1.Size = new System.Drawing.Size(970, 240);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Practice";
             // 
+            // btnReset
+            // 
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.ForeColor = System.Drawing.Color.Red;
+            this.btnReset.Location = new System.Drawing.Point(415, 194);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(310, 40);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset Practices From Group Practice";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // lblMasterValue
+            // 
+            this.lblMasterValue.AutoSize = true;
+            this.lblMasterValue.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMasterValue.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblMasterValue.Location = new System.Drawing.Point(851, 153);
+            this.lblMasterValue.Name = "lblMasterValue";
+            this.lblMasterValue.Size = new System.Drawing.Size(40, 29);
+            this.lblMasterValue.TabIndex = 12;
+            this.lblMasterValue.Text = "20";
+            // 
+            // TrackQuestionsValue
+            // 
+            this.TrackQuestionsValue.AutoSize = false;
+            this.TrackQuestionsValue.Location = new System.Drawing.Point(171, 156);
+            this.TrackQuestionsValue.Maximum = 100;
+            this.TrackQuestionsValue.Minimum = 1;
+            this.TrackQuestionsValue.Name = "TrackQuestionsValue";
+            this.TrackQuestionsValue.Size = new System.Drawing.Size(678, 32);
+            this.TrackQuestionsValue.TabIndex = 11;
+            this.TrackQuestionsValue.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.TrackQuestionsValue.Value = 20;
+            this.TrackQuestionsValue.Scroll += new System.EventHandler(this.TrackQuestionsValue_Scroll);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 156);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Master Questions:";
+            // 
             // btnApply
             // 
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApply.Location = new System.Drawing.Point(398, 148);
+            this.btnApply.ForeColor = System.Drawing.Color.Green;
+            this.btnApply.Location = new System.Drawing.Point(262, 194);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(147, 40);
             this.btnApply.TabIndex = 9;
@@ -246,7 +304,7 @@
             // 
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Kristen ITC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(937, 11);
             this.btnClose.Name = "btnClose";
@@ -258,13 +316,25 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Matura MT Script Capitals", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(11, 8);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(976, 49);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Settings";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnFIX
+            // 
+            this.btnFIX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFIX.ForeColor = System.Drawing.Color.Orange;
+            this.btnFIX.Location = new System.Drawing.Point(817, 518);
+            this.btnFIX.Name = "btnFIX";
+            this.btnFIX.Size = new System.Drawing.Size(170, 29);
+            this.btnFIX.TabIndex = 5;
+            this.btnFIX.Text = "FIX beta";
+            this.btnFIX.UseVisualStyleBackColor = true;
+            this.btnFIX.Click += new System.EventHandler(this.btnFIX_Click);
             // 
             // Settings
             // 
@@ -286,6 +356,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackQuestionsValue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,5 +381,10 @@
         private System.Windows.Forms.ComboBox comboGroup;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnApply;
+        private System.Windows.Forms.Label lblMasterValue;
+        private System.Windows.Forms.TrackBar TrackQuestionsValue;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnFIX;
     }
 }

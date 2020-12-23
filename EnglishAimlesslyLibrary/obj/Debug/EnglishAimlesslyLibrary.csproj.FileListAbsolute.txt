@@ -12,3 +12,4 @@ G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Deb
 G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csproj.CoreCompileInputs.cache
 G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.dll
 G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Debug\EnglishAimlesslyLibrary.csprojAssemblyReference.cache

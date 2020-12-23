@@ -30,19 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InspectForm));
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.lblGroup = new System.Windows.Forms.Label();
             this.btnExamples = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
             this.lblPracticed = new System.Windows.Forms.Label();
             this.lblWord = new System.Windows.Forms.Label();
             this.pnlAnswers = new System.Windows.Forms.Panel();
-            this.lblEquivalent = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.pnlTitle = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDescription = new System.Windows.Forms.WebBrowser();
             this.pnlMain.SuspendLayout();
-            this.pnlAnswers.SuspendLayout();
             this.pnlTitle.SuspendLayout();
+            this.pnlAnswers.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -60,6 +61,26 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1300, 620);
             this.pnlMain.TabIndex = 1;
+            // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.Black;
+            this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Location = new System.Drawing.Point(-4, 11);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(247, 38);
+            this.pnlTitle.TabIndex = 17;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(244, 38);
+            this.lblTitle.TabIndex = 15;
+            this.lblTitle.Text = "Inspect #1";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblGroup
             // 
@@ -120,51 +141,34 @@
             // pnlAnswers
             // 
             this.pnlAnswers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAnswers.Controls.Add(this.lblEquivalent);
-            this.pnlAnswers.Controls.Add(this.lblDescription);
+            this.pnlAnswers.Controls.Add(this.panel1);
             this.pnlAnswers.Location = new System.Drawing.Point(34, 134);
             this.pnlAnswers.Name = "pnlAnswers";
             this.pnlAnswers.Size = new System.Drawing.Size(1225, 390);
             this.pnlAnswers.TabIndex = 0;
             // 
-            // lblEquivalent
+            // panel1
             // 
-            this.lblEquivalent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquivalent.Location = new System.Drawing.Point(3, 0);
-            this.lblEquivalent.Name = "lblEquivalent";
-            this.lblEquivalent.Size = new System.Drawing.Size(1215, 32);
-            this.lblEquivalent.TabIndex = 5;
-            this.lblEquivalent.Text = "Equivalent";
-            this.lblEquivalent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblDescription);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1223, 388);
+            this.panel1.TabIndex = 1;
             // 
             // lblDescription
             // 
-            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(21, 41);
+            this.lblDescription.AllowNavigation = false;
+            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescription.IsWebBrowserContextMenuEnabled = false;
+            this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.MinimumSize = new System.Drawing.Size(20, 20);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(1185, 343);
-            this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "Description";
-            // 
-            // pnlTitle
-            // 
-            this.pnlTitle.BackColor = System.Drawing.Color.Black;
-            this.pnlTitle.Controls.Add(this.lblTitle);
-            this.pnlTitle.Location = new System.Drawing.Point(-4, 11);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(247, 38);
-            this.pnlTitle.TabIndex = 17;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(3, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(244, 38);
-            this.lblTitle.TabIndex = 15;
-            this.lblTitle.Text = "Inspect #1";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDescription.Size = new System.Drawing.Size(1221, 386);
+            this.lblDescription.TabIndex = 6;
+            this.lblDescription.Url = new System.Uri("", System.UriKind.Relative);
+            this.lblDescription.WebBrowserShortcutsEnabled = false;
             // 
             // InspectForm
             // 
@@ -183,8 +187,9 @@
             this.Load += new System.EventHandler(this.InspectForm_Load);
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
-            this.pnlAnswers.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);
+            this.pnlAnswers.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -196,11 +201,11 @@
         private System.Windows.Forms.Label lblPracticed;
         private System.Windows.Forms.Label lblWord;
         private System.Windows.Forms.Panel pnlAnswers;
-        private System.Windows.Forms.Label lblEquivalent;
-        private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnExamples;
         private System.Windows.Forms.Label lblGroup;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.WebBrowser lblDescription;
     }
 }

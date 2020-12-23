@@ -33,7 +33,7 @@ namespace EnglishAimlessly
             dictionary.ReloadList();
 
             results = new List<int>();
-            listOfMasteredWords = dictionary.FilterByPracticedNumber(5, 300);
+            listOfMasteredWords = dictionary.FilterByPracticedNumber(5, Properties.Settings.Default.MasterQuestions);
             all = listOfMasteredWords.Count;
 
             if (current < all - 1)

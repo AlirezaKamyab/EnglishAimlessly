@@ -42,6 +42,8 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEditor = new System.Windows.Forms.Button();
+            this.isHtmlCode = new System.Windows.Forms.CheckBox();
             this.comboGroup = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
@@ -113,7 +115,7 @@
             this.checkImportant.Location = new System.Drawing.Point(73, 425);
             this.checkImportant.Name = "checkImportant";
             this.checkImportant.Size = new System.Drawing.Size(146, 24);
-            this.checkImportant.TabIndex = 5;
+            this.checkImportant.TabIndex = 7;
             this.checkImportant.Text = "Important Word";
             this.checkImportant.UseVisualStyleBackColor = true;
             // 
@@ -130,12 +132,13 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(1034, 11);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(50, 50);
-            this.btnClose.TabIndex = 7;
+            this.btnClose.TabIndex = 9;
             this.btnClose.Text = "×";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -144,10 +147,11 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.Green;
             this.btnAdd.Location = new System.Drawing.Point(449, 447);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(200, 50);
-            this.btnAdd.TabIndex = 6;
+            this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -164,6 +168,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnEditor);
+            this.panel1.Controls.Add(this.isHtmlCode);
             this.panel1.Controls.Add(this.comboGroup);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label6);
@@ -183,6 +189,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 510);
             this.panel1.TabIndex = 12;
+            // 
+            // btnEditor
+            // 
+            this.btnEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnEditor.Location = new System.Drawing.Point(836, 372);
+            this.btnEditor.Name = "btnEditor";
+            this.btnEditor.Size = new System.Drawing.Size(121, 31);
+            this.btnEditor.TabIndex = 6;
+            this.btnEditor.Text = "Editor beta";
+            this.btnEditor.UseVisualStyleBackColor = true;
+            this.btnEditor.Click += new System.EventHandler(this.btnEditor_Click);
+            // 
+            // isHtmlCode
+            // 
+            this.isHtmlCode.AutoSize = true;
+            this.isHtmlCode.Checked = true;
+            this.isHtmlCode.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.isHtmlCode.Location = new System.Drawing.Point(649, 376);
+            this.isHtmlCode.Name = "isHtmlCode";
+            this.isHtmlCode.Size = new System.Drawing.Size(181, 24);
+            this.isHtmlCode.TabIndex = 5;
+            this.isHtmlCode.Text = "Auto convert to html";
+            this.isHtmlCode.UseVisualStyleBackColor = true;
             // 
             // comboGroup
             // 
@@ -251,5 +281,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.ComboBox comboGroup;
+        private System.Windows.Forms.Button btnEditor;
+        private System.Windows.Forms.CheckBox isHtmlCode;
     }
 }

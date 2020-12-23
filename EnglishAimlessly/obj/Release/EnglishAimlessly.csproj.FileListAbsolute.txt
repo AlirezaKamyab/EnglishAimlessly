@@ -37,3 +37,4 @@ C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\Englis
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.MasterChallenge.resources
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.MasterResults.resources
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.ResultItem.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.Editor.resources

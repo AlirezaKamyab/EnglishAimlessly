@@ -299,7 +299,6 @@
             // 
             // practiceTimer
             // 
-            this.practiceTimer.Interval = 1;
             this.practiceTimer.Tick += new System.EventHandler(this.practiceTimer_Tick);
             // 
             // LimitLoader

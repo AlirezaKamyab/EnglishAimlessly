@@ -27,7 +27,14 @@ namespace EnglishAimlessly
             word.Name = txtWord.Text;
             word.Type = UserWord.ToWordType(comboType.Text);
             word.Equivalent = txtEquivalent.Text;
-            word.Description = txtDescription.Text;
+            if (!isHtmlCode.Checked)
+            {
+                word.Description = txtDescription.Text;
+            }
+            else
+            {
+                word.Description = HtmlCode(txtDescription.Text);
+            }
             word.Important = checkImportant.Checked;
             word.Practiced = 0;
             word.Group = comboGroup.Text;
@@ -72,6 +79,38 @@ namespace EnglishAimlessly
             {
                 comboGroup.Items.Add(item.Name);
             }
+        }
+
+        private string HtmlCode(string text)
+        {
+            try
+            { 
+                string result = "";
+                string[] txt = txtDescription.Text.Split('\n');
+                foreach (string line in txt)
+                {
+                    result += "<p>" + line + "</p>\n";
+                }
+                return result;
+            }
+            catch
+            {
+                return txtDescription.Text;
+            }
+        }
+
+        private void btnEditor_Click(object sender, EventArgs e)
+        {
+            Editor.code = txtDescription.Text;
+            Editor editor = new Editor();
+            editor.FormClosing += Editor_FormClosing;
+            editor.Show();
+        }
+
+        private void Editor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            isHtmlCode.Checked = false;
+            txtDescription.Text = Editor.code;
         }
     }
 }

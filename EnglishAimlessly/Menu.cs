@@ -164,10 +164,10 @@ namespace EnglishAimlessly
             userDictionary.ReloadList();
         }
 
+        Main main = new Main();
         private void practiceTimer_Tick(object sender, EventArgs e)
         {
             //--Practice time
-            Main main = new Main();
             main.FormClosing += Main_FormClosing;
             lastPracticeToolStripMenuItem.Text = lblNextPractice.Text;
             switch (Properties.Settings.Default.PracticeCycle)

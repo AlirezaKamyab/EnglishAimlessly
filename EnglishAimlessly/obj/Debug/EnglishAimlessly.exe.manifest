@@ -4,7 +4,7 @@
   <description asmv2:iconFile="English.ico" asmv2:publisher="AlirezaKamyab" co.v1:suiteName="Aimlessly" asmv2:product="EnglishAimlessly" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EnglishAimlessly" version="1.7.1.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="EnglishAimlessly" version="1.8.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="EnglishAimlessly.exe" parameters="" />
   </entryPoint>
   <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnglishAimlessly.exe" size="2521568">
-      <assemblyIdentity name="EnglishAimlessly" version="1.7.1.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnglishAimlessly.exe" size="2629600">
+      <assemblyIdentity name="EnglishAimlessly" version="1.8.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PXUuYC7iFOGFOKVfnVvlVB+5k7//slJe+o8hGnxL3xM=</dsig:DigestValue>
+        <dsig:DigestValue>i4aq7ygzfwVKznfJS43iYz7tgfYM4+HiCng+RMmS3U4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,7 +63,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PhdniURI891RnDndw+6sKQxl4S+/ZUNlWlkVPaRyAbk=</dsig:DigestValue>
+        <dsig:DigestValue>2wOQNgmgVzD5L80GXQ32u6Wo4wxK6DZs6IUlSI3T8DI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,13 +85,13 @@
       <dsig:DigestValue>kycKqSfakDzJIuhuPBTE/uDk23VcqiKmgt8YvKGML9E=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="EnglishAimlessly.exe.config" size="2805">
+  <file name="EnglishAimlessly.exe.config" size="2931">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uWb2UbgWAMvFQV2NdOuHDqUFNkwSJcXOCUq1DiUakuI=</dsig:DigestValue>
+      <dsig:DigestValue>vEbMK0cEflx29q61puU3+S60I6WyZlYgw00yCwYBs1Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UserDatabase.mdb" size="442368" writeableType="applicationData">

@@ -5,3 +5,4 @@ C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Release
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Release\EnglishAimlesslyLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Release\EnglishAimlesslyLibrary.dll
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Release\EnglishAimlesslyLibrary.pdb
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlesslyLibrary\obj\Release\EnglishAimlesslyLibrary.csprojAssemblyReference.cache

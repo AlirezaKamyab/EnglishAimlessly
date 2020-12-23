@@ -39,11 +39,11 @@ namespace EnglishAimlessly
             BackgroundLoader.Start();
 
 
-            if(LearnMode == 0)
+            if (LearnMode == 0)
             {
                 lblTitle.Text = "Normal Mode";
             }
-            else if(LearnMode == 1)
+            else if (LearnMode == 1)
             {
                 lblTitle.Text = "Random Mode";
             }
@@ -134,13 +134,19 @@ namespace EnglishAimlessly
 
         private void LoadTheWord()
         {
+            string htmlData = "";
             userDictionary.ReloadList();
             wordsDictionary.ReloadList();
             word = ChooseAWord();
 
             lblWord.Text = word.Name + " (" + word.Type.ToString() + ")";
-            lblEquivalent.Text = word.Equivalent;
-            lblDescription.Text = word.Description;
+            //lblEquivalent.Text = word.Equivalent;
+            if (word.Equivalent.Trim() != "")
+            {
+                htmlData += "<p><b><i>" + word.Equivalent + "</i></b></p><br><hr><br>\n";
+            }
+            htmlData += word.Description;
+            DisplayHtml(htmlData);
             lblPracticed.Text = "Practiced: " + word.Practiced.ToString();
             lblGroup.Text = string.Format("Group: {0}", word.Group);
             if (word.Important)
@@ -151,6 +157,27 @@ namespace EnglishAimlessly
             else
             {
                 lblWord.ForeColor = Color.Black;
+            }
+        }
+        private void DisplayHtml(string html)
+        {
+            try
+            {
+                lblDescription.Navigate("about:blank");
+                try
+                {
+                    if (lblDescription.Document != null)
+                    {
+                        lblDescription.Document.Write(string.Empty);
+                    }
+                }
+                catch
+                { } // do nothing with this
+                lblDescription.DocumentText = HtmlStyle(html);
+            }
+            catch
+            {
+
             }
         }
 
@@ -210,6 +237,34 @@ namespace EnglishAimlessly
             ExampleInspection.isAll = false;
             ExampleInspection inspection = new ExampleInspection();
             inspection.Show();
+        }
+
+        public static string HtmlStyle(string Documents)
+        {
+            string style = ".content{\n" +
+            "background-color: white;\n" +
+            "padding: 2px 5px 5px 5px;\n" +
+            "font - family: 'Segoe UI', Tahoma, Geneva, Verdana, sans - serif;\n" + 
+            "}\n" +
+
+            "p{\n" +
+            "line-height: 0.75em;\n" +
+            "margin: 1px; \n" + 
+            "padding: 5px; \n" + 
+            "}";
+            string html = "<!doctype html>\n" +
+                "<html lang=\"en\">\n" +
+                "<head>\n" +
+                "<title>Learn English Words</title>\n" +
+                "<style>" + style + "</style>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<div class=\"content\">\n" +
+                Documents +
+                "</div>\n" +
+                "</body>\n" +
+                "</html>";
+            return html;
         }
     }
 }

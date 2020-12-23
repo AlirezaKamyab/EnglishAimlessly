@@ -22,13 +22,18 @@ namespace EnglishAimlessly
 
         private void InspectForm_Load(object sender, EventArgs e)
         {
+            string htmlData = "";
             wordsDictionary = new WordsDictionary();
             wordsDictionary.ReloadList();
             word = LoadWordById();
 
             lblWord.Text = word.Name + " (" + word.Type.ToString() + ")";
-            lblEquivalent.Text = word.Equivalent;
-            lblDescription.Text = word.Description;
+            if (word.Equivalent.Trim() != "")
+            {
+                htmlData += "<p><b><i>" + word.Equivalent + "</i></b></p><br><hr><br>\n";
+            }
+            htmlData += word.Description;
+            DisplayHtml(htmlData); // Show Html
             lblPracticed.Text = "Practiced: " + word.Practiced.ToString();
             lblTitle.Text = "Inspect #" + Id;
             lblGroup.Text = string.Format("Group: {0}", word.Group);
@@ -36,6 +41,28 @@ namespace EnglishAimlessly
             {
                 lblWord.Text = word.Name + "* (" + word.Type.ToString() + ")";
                 lblWord.ForeColor = Color.Red;
+            }
+        }
+
+        private void DisplayHtml(string html)
+        {
+            try
+            {
+                lblDescription.Navigate("about:blank");
+                try
+                {
+                    if (lblDescription.Document != null)
+                    {
+                        lblDescription.Document.Write(string.Empty);
+                    }
+                }
+                catch
+                { } // do nothing with this
+                lblDescription.DocumentText = Main.HtmlStyle(html);
+            }
+            catch
+            {
+
             }
         }
 

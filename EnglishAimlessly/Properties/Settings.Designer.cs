@@ -96,7 +96,7 @@ namespace EnglishAimlessly.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.7.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.8.0")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
@@ -150,6 +150,18 @@ namespace EnglishAimlessly.Properties {
             }
             set {
                 this["SelectedGroupPractice"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public int MasterQuestions {
+            get {
+                return ((int)(this["MasterQuestions"]));
+            }
+            set {
+                this["MasterQuestions"] = value;
             }
         }
     }

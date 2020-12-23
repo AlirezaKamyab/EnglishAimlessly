@@ -60,7 +60,14 @@ namespace EnglishAimlessly
             newWord.Name = txtWord.Text;
             newWord.Type = Word.ToWordType(comboType.Text);
             newWord.Equivalent = txtEquivalent.Text;
-            newWord.Description = txtDescription.Text;
+            if (!isHtmlCode.Checked)
+            {
+                newWord.Description = txtDescription.Text;
+            }
+            else
+            {
+                newWord.Description = HtmlCode(txtDescription.Text);
+            }
             newWord.Important = checkImportant.Checked;
             newWord.Practiced = word.Practiced;
             newWord.Group = comboGroup.Text;
@@ -82,6 +89,38 @@ namespace EnglishAimlessly
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private string HtmlCode(string text)
+        {
+            try
+            {
+                string result = "";
+                string[] txt = txtDescription.Text.Split('\n');
+                foreach (string line in txt)
+                {
+                    result += "<p>" + line + "</p>\n";
+                }
+                return result;
+            }
+            catch
+            {
+                return txtDescription.Text;
+            }
+        }
+
+        private void btnEditor_Click(object sender, EventArgs e)
+        {
+            Editor.code = txtDescription.Text;
+            Editor editor = new Editor();
+            editor.FormClosing += Editor_FormClosing; ;
+            editor.Show();
+        }
+
+        private void Editor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            txtDescription.Text = Editor.code;
+            //isHtmlCode.Checked = false;
         }
     }
 }

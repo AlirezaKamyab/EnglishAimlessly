@@ -43,8 +43,7 @@
             this.lblPracticed = new System.Windows.Forms.Label();
             this.lblWord = new System.Windows.Forms.Label();
             this.pnlAnswers = new System.Windows.Forms.Panel();
-            this.lblDescription = new System.Windows.Forms.RichTextBox();
-            this.lblEquivalent = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.WebBrowser();
             this.BackgroundLoader = new System.Windows.Forms.Timer(this.components);
             this.pnlMain.SuspendLayout();
             this.pnlTitle.SuspendLayout();
@@ -200,7 +199,6 @@
             // 
             this.pnlAnswers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlAnswers.Controls.Add(this.lblDescription);
-            this.pnlAnswers.Controls.Add(this.lblEquivalent);
             this.pnlAnswers.Location = new System.Drawing.Point(34, 137);
             this.pnlAnswers.Name = "pnlAnswers";
             this.pnlAnswers.Size = new System.Drawing.Size(1332, 333);
@@ -208,25 +206,16 @@
             // 
             // lblDescription
             // 
-            this.lblDescription.BackColor = System.Drawing.Color.White;
-            this.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(18, 44);
+            this.lblDescription.AllowNavigation = false;
+            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescription.IsWebBrowserContextMenuEnabled = false;
+            this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.MinimumSize = new System.Drawing.Size(20, 20);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.ReadOnly = true;
-            this.lblDescription.Size = new System.Drawing.Size(1289, 281);
-            this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "Description";
-            // 
-            // lblEquivalent
-            // 
-            this.lblEquivalent.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquivalent.Location = new System.Drawing.Point(3, 0);
-            this.lblEquivalent.Name = "lblEquivalent";
-            this.lblEquivalent.Size = new System.Drawing.Size(1328, 32);
-            this.lblEquivalent.TabIndex = 5;
-            this.lblEquivalent.Text = "Equivalent";
-            this.lblEquivalent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDescription.Size = new System.Drawing.Size(1330, 331);
+            this.lblDescription.TabIndex = 6;
+            this.lblDescription.Url = new System.Uri("", System.UriKind.Relative);
+            this.lblDescription.WebBrowserShortcutsEnabled = false;
             // 
             // BackgroundLoader
             // 
@@ -263,16 +252,15 @@
         private System.Windows.Forms.Label lblPracticed;
         private System.Windows.Forms.Label lblWord;
         private System.Windows.Forms.Panel pnlAnswers;
-        private System.Windows.Forms.Label lblEquivalent;
         private System.Windows.Forms.Button btnSkip;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Timer BackgroundLoader;
         private System.Windows.Forms.TextBox txtExample;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox lblDescription;
         private System.Windows.Forms.LinkLabel lnkExamples;
         private System.Windows.Forms.Label lblGroup;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.WebBrowser lblDescription;
     }
 }
