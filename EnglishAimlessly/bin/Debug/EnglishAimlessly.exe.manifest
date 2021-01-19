@@ -4,7 +4,7 @@
   <description asmv2:iconFile="English.ico" asmv2:publisher="AlirezaKamyab" co.v1:suiteName="Aimlessly" asmv2:product="EnglishAimlessly" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EnglishAimlessly" version="1.9.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="EnglishAimlessly" version="1.9.1.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="EnglishAimlessly.exe" parameters="" />
   </entryPoint>
   <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnglishAimlessly.exe" size="2741216">
-      <assemblyIdentity name="EnglishAimlessly" version="1.9.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnglishAimlessly.exe" size="2741728">
+      <assemblyIdentity name="EnglishAimlessly" version="1.9.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VSxUGW31a6C3b7pQXlRWWny/acTHCNQNiG1M4jC8hkM=</dsig:DigestValue>
+        <dsig:DigestValue>P6pqVVy8xb8leKzWdyzSnEt9/hp3ReYZT6s1pB3JhBE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,7 +91,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>IaXigTy2A5S5Wh6AzgavqWhwEPi0MXU/5nADH7Hewv8=</dsig:DigestValue>
+      <dsig:DigestValue>NxIwmQHXMWQd431S7Cva2coOg+mOH+WbigwXZnOh55k=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UserDatabase.mdb" size="724992" writeableType="applicationData">

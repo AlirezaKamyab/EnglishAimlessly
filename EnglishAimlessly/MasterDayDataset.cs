@@ -17,6 +17,7 @@ namespace EnglishAimlessly
         {
             _connection = new OleDbConnection(Properties.Settings.Default.UserDatabaseConnectionString);
             _innerList = new List<MasterDayItem>();
+            CreateTable();
             fetchall();
         }
         public MasterDayItem this[int index] { get => _innerList[index]; set => _innerList[index] = value; }
@@ -145,11 +146,17 @@ namespace EnglishAimlessly
                         _innerList.Add(item);
                     }
                 }
+
+                reader.Close();
                 Close();
             }
-            catch(Exception ex)
+            catch
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message, "error");
+                
+            }
+            finally
+            {
+                Close();
             }
         }
 
@@ -190,6 +197,37 @@ namespace EnglishAimlessly
             }
 
             return new MasterDayItem();
+        }
+
+        private void CreateTable()
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            try
+            {
+                string query = "CREATE TABLE " + TABLENAME + "(" +
+                    "Id INT NOT NULL IDENTITY(1,1), " +
+                    "Slot1 int, " +
+                    "Slot2 int, " +
+                    "Slot3 int, " +
+                    "Slot4 int, " +
+                    "DateAndTime text, " +
+                    "PRIMARY KEY(Id)" +
+                    ");";
+                cmd = new OleDbCommand(query, _connection);
+                Open();
+                cmd.ExecuteNonQuery();
+                Close();
+            }
+            catch
+            {
+                //System.Windows.Forms.MessageBox.Show("Update Failed\n" + ex.Message, "Error");
+                cmd.Dispose();
+                Close();
+            }
+            finally
+            {
+                Close();
+            }
         }
     }
 }
