@@ -73,7 +73,7 @@ namespace EnglishAimlessly
             comboGroup.SelectedIndex = comboGroup.Items.Count - 1;
             if (groupNames.Count > 0)
             {
-                if (groupNames.Contains(new Group(Properties.Settings.Default.SelectedGroupPractice.Trim())))
+                if (groupNames.Contains(new Group(Properties.Settings.Default.SelectedGroupPractice.Trim())) || Properties.Settings.Default.SelectedGroupPractice.Trim() == "*All*")
                 {
                     comboGroup.Text = Properties.Settings.Default.SelectedGroupPractice.Trim();
                 }

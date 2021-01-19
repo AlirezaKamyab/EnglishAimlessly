@@ -445,7 +445,8 @@ namespace EnglishAimlessly
 
         private void btnMasteredWords_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming soon","Wait for it");
+            MasterDay masterDay = new MasterDay();
+            masterDay.Show();
         }
     }
 }

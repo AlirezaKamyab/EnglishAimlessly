@@ -77,3 +77,5 @@ G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\Engl
 G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.exe
 G:\Programming Language C#\Made\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.pdb
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Editor.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.Item_Word.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Debug\EnglishAimlessly.MasterDay.resources

@@ -96,7 +96,7 @@ namespace EnglishAimlessly.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.8.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.9.0")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
@@ -108,7 +108,7 @@ namespace EnglishAimlessly.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.2.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.3.0")]
         public string DatabaseVersion {
             get {
                 return ((string)(this["DatabaseVersion"]));

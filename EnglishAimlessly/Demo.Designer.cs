@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.item_Word1 = new EnglishAimlessly.Item_Word();
             this.SuspendLayout();
             // 
             // button1
@@ -73,11 +74,27 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // item_Word1
+            // 
+            this.item_Word1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.item_Word1.BackColor = System.Drawing.Color.Transparent;
+            this.item_Word1.BackgroundColor = System.Drawing.Color.Yellow;
+            this.item_Word1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.item_Word1.Description = "fsafsadf and there sdf was yet something else bothering me\\nsomething awful";
+            this.item_Word1.DescriptionColor = System.Drawing.Color.Black;
+            this.item_Word1.Location = new System.Drawing.Point(228, 154);
+            this.item_Word1.Name = "item_Word1";
+            this.item_Word1.Size = new System.Drawing.Size(566, 104);
+            this.item_Word1.TabIndex = 3;
+            this.item_Word1.Title = "Conclusive";
+            this.item_Word1.TitleColor = System.Drawing.Color.Black;
+            // 
             // Demo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 479);
+            this.Controls.Add(this.item_Word1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -95,6 +112,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private Item_Word item_Word1;
     }
 }
 

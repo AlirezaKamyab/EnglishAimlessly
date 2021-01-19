@@ -38,3 +38,5 @@ C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\Englis
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.MasterResults.resources
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.ResultItem.resources
 C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.Editor.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.Item_Word.resources
+C:\Users\Alire\source\repos\EnglishAimlessly\EnglishAimlessly\obj\Release\EnglishAimlessly.MasterDay.resources
